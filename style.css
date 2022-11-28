@@ -549,8 +549,72 @@
   .t_cb_cont{
     flex-direction: column;
   }
-  
-  
-
+  /* ---------------------------------------------------------- */
+  .dmvn{
+    flex-direction: column;
+  }
+  .mva-cont{
+    width: 100%;
+  }
+  .a-cont{
+    text-align: center;
+    margin-left: 0%;
+  }
+  .mv-cont{
+    flex-direction: column;
+  }
+  .cardflip{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  .box-news{
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    border: 1px solid #1b1b1b;
+    margin-top: 20px;
+  }
+  /* ------------------------------------------------------------- */
+  .ft-cont{
+    flex-direction: column;
+  }
+  .infra-slider{
+    margin-bottom: 30px;
+  }
+  /* ------------------------------------------------------------ */
+  .bk-st-dv{
+    flex-direction: column;
+  }
+  .left-bk{
+    width: 90%;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .right-bk{
+    margin: auto;
+  }
+  /* ----------------------------------------------------------- */
+  .bl-cont{
+    flex-direction: column;
+  }
+  .blg{
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+/* --------------------------------------------------------------- */
+.msg{
+  flex-direction: column-reverse;
+  width: 90%;
+  margin: auto;
+}
+.msg-des{
+  width: 70%;
+  margin-top: 30px;
+}
+.msg-img img{
+  margin-bottom: 0;
+}
 
 }
