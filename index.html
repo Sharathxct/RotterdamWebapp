@@ -17,24 +17,120 @@
     
 </head>
 <body>
-  <nav class="navbar">
-    <div class="content">
-      <div class="logo"><a href="#"><img src="imgs/logo.png" alt=""></a></div>
-      <ul class="menu-list">
-        <div class="icon cancel-btn">
-          <i class="fas fa-times"></i>
-        </div>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contact</a></li>
+<nav>
+  <div class="logo"><a href="index.html"><img src="imgs/logo.png" alt=""></a></div>
+  <label for="btn" class="icon">
+    <span class="fa fa-bars"></span>
+  </label>
+  <input type="checkbox" id="btn">
+  <ul>
+
+    <li>
+      <label for="btn-4" class="show">About Us +</label>
+      <a href="a_overview.html">About Us</a>
+      <input type="checkbox" id="btn-4">
+      <ul>
+        <li><a href="a_overview.html">Overview</a></li>
+        <li><a href="a_vision.html">Vision & Mission</a></li>
+        <li><a href="a_administration.html">Administration</a></li>
+        <li><a href="a_mandatory.html">Mandatory Public Disclosure</a></li>
       </ul>
-      <div class="icon menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
+    </li>
+
+
+    <li>
+      <label for="btn-9" class="show">Academics +</label>
+      <a href="acd_curriculam.html">Academics</a>
+      <input type="checkbox" id="btn-9">
+      <ul>
+        <li><a href="acd_curriculam.html">Curriculum</a></li>
+        <li><a href="#">Achievement</a></li>
+        <li><a href="#">Tours & Visits</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Faculty</a></li>
+      </ul>
+    </li>
+
+
+    <li>
+      <label for="btn-8" class="show">Admission +</label>
+      <a href="#">Admission</a>
+      <input type="checkbox" id="btn-8">
+      <ul>
+        <li><a href="#">Admission Form</a></li>
+        <li><a href="#">Admission Process</a></li>
+        <li><a href="#">Courses offered</a></li>
+      </ul>
+    </li>
+
+
+    <li>
+      <label for="btn-7" class="show">Activities +</label>
+      <a href="#">Activities</a>
+      <input type="checkbox" id="btn-7">
+      <ul>
+        <li><a href="#">Indoor Activities</a></li>
+        <li><a href="#">Outdoor Activities</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <label for="btn-6" class="show">Campus +</label>
+      <a href="#">Campus</a>
+      <input type="checkbox" id="btn-6">
+      <ul>
+        <li><a href="#">Infrastructure</a></li>
+        <li><a href="#">Facilityies</a></li>
+      </ul>
+    </li>
+
+
+
+    <li>
+      <label for="btn-2" class="show">Gallery +</label>
+      <a href="#">Gallery</a>
+      <input type="checkbox" id="btn-2">
+      <ul>
+        <li>
+          <label for="btn-3" class="show">Celebration+</label>
+          <a href="#">Celebration <span class="fa fa-plus"></span></a>
+          <input type="checkbox" id="btn-3">
+          <ul>
+            <li><a href="#">Preprimary</a></li>
+            <li><a href="#">School</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-5" class="show">Workshops+</label>
+          <a href="#">Workshops <span class="fa fa-plus"></span></a>
+          <input type="checkbox" id="btn-5">
+          <ul>
+            <li><a href="#">Children</a></li>
+            <li><a href="#">Faculty</a></li>
+          </ul>
+        </li>
+
+
+      </ul>
+    </li>
+
+
+    
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+
+<script>
+  $('.icon').click(function(){
+    $('span').toggleClass("cancel");
+  });
+</script>
+
+
+
+
+
 
   <!-- ------------------------------------------------------------------------------------------ -->
 
@@ -53,8 +149,8 @@
   <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <!-- <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> -->
 
   <!-- If we need scrollbar -->
   <!-- <div class="swiper-scrollbar"></div> -->
@@ -142,7 +238,7 @@
 
 </section>
 
-
+<!-- ---------------------------------------------------------------------- -->
 <section class="feat">
   <h1>Our Features</h1>
   <div class="ft-cont">
@@ -157,15 +253,21 @@
     <!-- Slides -->
     
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Play Ground</h3>
     </div>
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Laboratory</h3>
     </div>
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Digital Class</h3>
     </div>
     
@@ -198,15 +300,21 @@
     <!-- Slides -->
     
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Bus Transport</h3>
     </div>
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Services</h3>
     </div>
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Example</h3>
     </div>
     
@@ -240,15 +348,21 @@
     <!-- Slides -->
     
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Curriculum</h3>
     </div>
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Academics</h3>
     </div>
     <div class="swiper-slide ft-in">
-      <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      <div class="ft-in-img">
+        <img src="imgs/64557WhatsApp Image 2022-05-25 at 1.36.05 PM (2).jpeg" alt="">
+      </div>
       <h3>Co-curriculars</h3>
     </div>
     

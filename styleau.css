@@ -1,0 +1,75 @@
+.sub-banner{
+    height: 40vh;
+    background-color: brown;
+}
+.sb-ao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sb-ao h1{
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+.sb-ao a{
+    color: white;
+    text-decoration: none;
+}
+/* --------------------------------------- */
+.sb-sec-ao{
+    padding-top: 50px;
+    display: flex;
+}
+.side-bar-ao{
+    width: 28%;
+    margin-left: 70px;
+}
+.side-bar-ao ul{
+    list-style: none;
+    margin-top: 50px;
+}
+.side-bar-ao ul li{
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.side-bar-ao ul li:hover{
+    background-color: blueviolet;
+    
+}
+.side-bar-ao ul li a{
+    text-decoration: none;
+    line-height: 50px;
+    font-weight: 500;
+    width: 100%;
+    color: black;
+}
+/* ----------------------------------- */
+.ao-content{
+    margin-left: 90px;
+    width: 50%;
+}
+.ao-content h1{
+    margin-bottom: 38px;
+}
+/* ----------------------------------- */
+.ao-content img{
+    width: 100px;
+    border-radius: 50%;
+
+}
+/* ----------------------------[ */
+.acd-ach{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+
+}
+.acd-ach img{
+    border-radius: 0;
+    margin-right: 30px;
+}
