@@ -2,6 +2,10 @@
     height: 40vh;
     background-color: brown;
 }
+.sub-pg{
+    display: flex;
+    flex-direction: row;
+}
 .sb-ao{
     display: flex;
     flex-direction: column;
@@ -12,7 +16,7 @@
 }
 .sb-ao h1{
     color: white;
-    font-size: xx-large;
+    
     margin-bottom: 5px;
 }
 .sb-ao a{
@@ -72,4 +76,49 @@
 .acd-ach img{
     border-radius: 0;
     margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 868px){
+    .sub-pg{
+        display: flex;
+        flex-direction: column;
+    }
+    .side-bar-ao{
+        width: 93%;
+        margin: auto;
+        margin-left: 20px;
+        text-align: left;
+    }
+    .ao-content{
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        
+    }
+    .ao-content p{
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

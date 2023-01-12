@@ -183,7 +183,7 @@ nav ul ul ul li{
 .theCard:hover{
   transform: rotateY(180deg);
 }
-.thefront{
+.theBack{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -194,32 +194,65 @@ nav ul ul ul li{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transform: rotateY(180deg);
 }
-.thefront i{
+.theBack i{
   font-size: 2rem;
   margin-bottom: 20px;
 }
-.theBack{
+.thefront{
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   background: #f1f1f1;
   border-radius: 10px;
-  transform: rotateY(180deg);
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
-.theBack p{
-  margin: 10px 10px;
+.thefront p{
+  text-align: justify;
 }
 .news {
   margin-left: 25px;
+  width: 25%;
+  height: 550px;
 }
 .box-news{
   width: 140%;
   height: 90%;
   border: 1px solid #1b1b1b;
   margin-top: 20px;
+  background-color: #BFEAF5;
+}
+.box-news-news{
+  display: flex;
+  width: 90%;
+  height: 120px;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+}
+.box-news-content{
+  height: 99%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.box-news-news img{
+  width: 100px;
+  height: 100px;
+}
+.box-news-news p{
+  height: 100px;
+  padding-left: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 /* ------------------------------------------------------------ */
 .feat{
@@ -517,7 +550,100 @@ nav ul ul ul li{
   background-color: #4070F4;
 }
 
+/* ------------------------------------------------ */
 
+.footer-sec{
+  background-color: #58287F;
+}
+.footer{
+  padding-bottom: 50px;
+}
+.footer-cont{
+  display: flex;
+  flex-direction: row;
+}
+.foot-col1 {
+  width: 35%;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.foot-col1 img{
+  width: 100%;
+  
+}
+.foot-subcol1 ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.foot-subcol1 ul li{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.foot-subcol1 ul li:hover{
+  background-color: #5BC0F8;
+}
+
+
+.foot-col2{
+  width: 20%;
+  margin-left: 30px;
+  color: #89C4E1;
+  margin-top: 30px;
+}
+.foot-col2 ul{
+  list-style: none;
+  margin-top: 10px;
+}
+
+.foot-col2 ul li a{
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+}
+.foot-col2 ul li{
+  margin-bottom: 0px;
+  border-bottom: 1px solid black ;
+}
+.foot-col3{
+  margin-left: 20px;
+  color: #89C4E1;
+  margin-top: 30px;
+}
+.foot-col3 ul{
+  list-style: none;
+  margin-top: 10px;
+}
+.foot-col3 ul li {
+  margin-bottom: 0px;
+}
+.foot-col3 ul li a{
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+}
+.map-loc{
+  margin-top: 10px;
+}
+.copy-r8{
+  background-color: #1A0000;
+  color: white;
+  font-size: small;
+  text-align: center;
+  padding: 10px;
+}
+.copy-r8 p{
+  margin-bottom: 0px;
+  font-weight: 500;
+}
 
 /* ------------------------------------------------------------------------ */
 @media all and (max-width: 968px) {
@@ -529,7 +655,7 @@ nav ul ul ul li{
     padding-left: 30px;
     width: 100%;
   }
-  .show + a, ul{
+  .show + a, .navs-ul{
     display: none;
   }
   nav ul li,nav ul ul li{
@@ -594,7 +720,6 @@ nav ul ul ul li{
   .land-sw-sl img{
     max-height: 200px;
     width: 100%;
-    
     max-height: 300px;
   }
   /* ---------------------------------------------------------- */
@@ -623,6 +748,7 @@ nav ul ul ul li{
     width: 90%;
     margin: auto;
     margin-bottom: 35px;
+    height: 200px;
   }
   .box-news{
     width: 90%;
@@ -630,6 +756,10 @@ nav ul ul ul li{
     margin: auto;
     border: 1px solid #1b1b1b;
     margin-top: 20px;
+  }
+  .news{
+    width: 90%;
+    height: auto;
   }
   /* ------------------------------------------------------------- */
   .ft-cont{
@@ -651,12 +781,15 @@ nav ul ul ul li{
   .right-bk{
     margin: auto;
   }
+  .l-wrapper{
+    width: 90%;
+  }
   /* ----------------------------------------------------------- */
   .bl-cont{
     flex-direction: column;
   }
   .blg{
-    min-width: 300px;
+    min-width: 270px;
     margin: auto;
     margin-bottom: 35px;
   }
@@ -673,5 +806,18 @@ nav ul ul ul li{
 .msg-img img{
   margin-bottom: 0;
 }
-
+/* ------------------------------------------------------- */
+.footer-cont{
+  flex-direction: column;
+}
+.foot-col1{
+  width: 90%;
+  margin-left: 10px;
+}
+.foot-col2{
+  width: 90%;
+}
+.foot-col3{
+  width: 90%;
+}
 }
