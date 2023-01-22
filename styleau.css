@@ -239,8 +239,17 @@
     margin-bottom: 0px;
     text-align: justify;
 }
-
-
+/* ----------------------------------------acd-facultty -----------------*/
+.faculty-list li p{
+    margin-bottom: 0px;
+}
+/* ------------contact us ----------------------------------- */
+.cntct{
+    width: 100%;
+}
+.l-wrapper{
+    width: 500px;
+}
 
 
 
