@@ -10,7 +10,7 @@
   background: #f2f2f2;
 } */
 nav{
-  background: #5BC0F8;
+  background: #fff;
 }
 nav:after{
   content: '';
@@ -28,7 +28,7 @@ nav .logo{
   padding-top: 1%;
 }
 nav .logo img{
-  width: 150px;
+  width: 200px;
 }
 nav ul{
   float: right;
@@ -39,8 +39,9 @@ nav ul{
 nav ul li{
   float: left;
   display: inline-block;
-  background: #5BC0F8;
+  background: #fff;
   margin: 0 5px;
+  
 }
 nav ul li a{
   color: black;
@@ -50,11 +51,17 @@ nav ul li a{
   font-size: 18px;
   padding: 8px 15px;
 }
-nav ul li a:hover{
-  color: cyan;
+nav ul li:hover{
+  color: #1A0000;
   border-radius: 5px;
+  /* background-color: #16a085; */
   box-shadow:  0 0 5px #33ffff,
                0 0 10px #66ffff;
+}
+nav ul li:hover{
+  background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 13%, #9599E2 82%);
+
 }
 nav ul ul li a:hover{
   box-shadow: none;
@@ -297,10 +304,8 @@ nav ul ul ul li{
   box-shadow: 0 5px 5px 5px rgba(0,0,0,0.1);
 }
 .ft-in-img img{
-  width: 85%;
-  top: 0;
-  margin-top: 20px;
-  display: none;
+  
+ width: 100%;
 }
 .ft-in h3{
   margin-top: 30px;
@@ -377,7 +382,8 @@ nav ul ul ul li{
 }
 .bk-a-st{
   
-  background: #f1f1f1;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 13%, #9599E2 82%);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -389,9 +395,10 @@ nav ul ul ul li{
 }
 /* ------------------------------------------------------------ */
 .blog-sc{
-  margin-top: 80px;
+  padding-top: 80px;
   text-align: center;
   padding-bottom: 80px;
+  background-image: url(imgs/White-Seamless.jpg);
 }
 .bl-cont{
   display: flex;
@@ -409,7 +416,12 @@ nav ul ul ul li{
 /* -------------------------------------------------------------------- */
 .msg-p h1{
   text-align: center;
-  margin-bottom: 30px;
+}
+section.msg-p {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: #0195c7;
+  background-image: linear-gradient(43deg, #0195c7 0%, #01a0e2 46%, #3a3286 100%);
 }
 .msg{
   display: flex;
@@ -428,7 +440,7 @@ nav ul ul ul li{
 .testimonials{
   padding: 50px;
   padding-bottom: 100px;
-  margin-top: 50px;
+  
   background: #f7f8f9;
 }
 .test-head{
@@ -553,7 +565,7 @@ nav ul ul ul li{
 /* ------------------------------------------------ */
 
 .footer-sec{
-  background-color: #58287F;
+  background-color: #01518b;
 }
 .footer{
   padding-bottom: 50px;

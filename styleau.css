@@ -1,6 +1,8 @@
 .sub-banner{
     height: 40vh;
-    background-color: brown;
+    color: whitesmoke;
+    /* background-image: url() ; */
+    background: linear-gradient(to top, rgba(0,0,0,0.6),rgba(0,0,0,0.5) ), url(imgs/64557WhatsApp\ Image\ 2022-05-25\ at\ 1.36.05\ PM\ \(2\).jpeg) no-repeat top center;
 }
 .sub-pg{
     display: flex;
@@ -15,12 +17,13 @@
     justify-content: center;
 }
 .sb-ao h1{
-    color: white;
-    
+    color: whitesmoke;
+    font-weight: 900;
     margin-bottom: 5px;
 }
 .sb-ao a{
-    color: white;
+    color: whitesmoke;
+    font-weight: 800;
     text-decoration: none;
 }
 /* --------------------------------------- */
@@ -63,7 +66,7 @@
 
 /* ----------------------------------- */
 .ao-content img{
-    width: 100px;
+    height: 180px;
     border-radius: 50%;
 
 }
@@ -77,6 +80,7 @@
 .acd-ach img{
     border-radius: 0;
     margin-right: 30px;
+    width: 40%;
 }
 
 
@@ -93,6 +97,7 @@
     justify-content: center;
     width: 100%;
     padding-top: 50px;
+    margin-bottom: 30px;
 }
 .gallery img{  
     width: 27%;
@@ -135,12 +140,105 @@
 }
 
 
+/* ------------------------------------events------------------- */
+.sb-sec-ev{
+    margin-top: 30px;
+}
+.events-list{
+    width: 50%;
+    margin-left: 90px;
+}
+.ev-list{
+    list-style: decimal;
+    margin-top: 25px;
+    
+}
+.ev-list li{
+    cursor: pointer;
+}
+.ev-list li:hover{
+    color: darkblue;
+    letter-spacing: 2px;
+}
+.ev-list li{
+    margin-bottom: 0px;
+    text-align: start;
+}
+.sub-pg-ev{
+    display: flex;
+    flex-direction: row;
+}
+.sb-gall{
+    padding-top: 30px;
+}
+.ph-fl-col img{
+    border-radius: 10px;
+}
+/* ------------------------------------administration -------------*/
+.admini-role{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.admini-desig{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 25px;
+}
+.ao-admini{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+.admini-msg{
+    padding-left: 30px;
+    padding-top: 20px;
 
-
-
-
-
-
+}
+.admini-msg p{
+    margin-bottom: 0px;
+}
+.admini{
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+/* ----------------------------------------- */
+.adm-proc{
+    background-color: #f7f8f9;
+    padding-bottom: 50px;
+}
+.process-box-steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.process-box{
+    width: 40%;
+    aspect-ratio: 19/16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(0 0 0 0.9);
+    background-color: white;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    justify-content: space-around;
+}
+.process-box:hover{
+    box-shadow: 5px 5px 10px rgb(0 0 0.9 0.9);;
+}
+.process-box i{
+    font-size: 30px;
+    color: #4092e6;
+}
+.process-box p{
+    margin-bottom: 0px;
+    text-align: justify;
+}
 
 
 
@@ -161,6 +259,7 @@
         margin: auto;
         margin-left: 20px;
         text-align: left;
+        display: none;
     }
     .ao-content{
         width: 100%;
@@ -174,8 +273,87 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+    .ph-fl-col{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .ph-fl-col img{
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .ph-fl-col p{
+        padding: 0px 10px;
+        padding-top: 20px;
+    }
+
     /* -----gallery------ */
     .popupg img{
         width:95%;
     }
+
+    /* ----- */
+    .sub-pg-ev{
+        flex-direction: column;
+    }
+    .events-list{
+        margin-left: 0px;
+        width: 100%;
+        
+        margin-top: 20px;
+    }
+    .events-list ol{
+        padding-left: 50px;
+    }
+    .events-list h1{
+        text-align: center;
+    }
+    /* ------------------------ */
+    .admini-role{
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .admini-desig{
+        width: 100%;
+        padding: 10px;
+        
+        align-items: stretch;
+    }
+    .ao-admini{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .ao-admini p{
+        padding-top: 10px;
+    }
+    .admini-msg{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 0px;
+    }
+    .admini{
+        padding-top: 10px;
+    }
+    /* ------------------------- */
+    .process-box-steps{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .process-box{
+        width: 85%;
+        display: block;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin-bottom: 25px;
+        padding: 30px 0px;
+    }
+    .process-box p{
+        padding: 10px;
+    }
+    
 }
