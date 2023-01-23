@@ -51,17 +51,29 @@ nav ul li a{
   font-size: 18px;
   padding: 8px 15px;
 }
-nav ul li:hover{
+/* nav ul li:hover{
   color: #1A0000;
   border-radius: 5px;
-  /* background-color: #16a085; */
+  background-color: #16a085;
   box-shadow:  0 0 5px #33ffff,
                0 0 10px #66ffff;
-}
-nav ul li:hover{
+} */
+/* nav ul li:hover{
   background-color: #8BC6EC;
 background-image: linear-gradient(135deg, #8BC6EC 13%, #9599E2 82%);
 
+} */
+nav ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #023047;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+nav ul li:hover::after{
+  width: 100%;
 }
 nav ul ul li a:hover{
   box-shadow: none;
